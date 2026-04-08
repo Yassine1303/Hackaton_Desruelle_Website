@@ -21,4 +21,3 @@ Layout global: Entete - Barre-nav - RouterView - PiedPage -->
 <style scoped>
 /* Styles globaux App */
 </style>
-
