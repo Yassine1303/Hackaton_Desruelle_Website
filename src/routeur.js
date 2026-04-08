@@ -12,7 +12,9 @@ const routes = [
   { path: '/tech/calendrier', component: () => import('@/pages/tech/calendrier.vue'), name: 'tech-calendrier' },
   // Calendrier - Client
   { path: '/client/choix-creneau', component: () => import('@/pages/client/choix-creneau.vue'), name: 'client-creneau' },
-  // Calendrier - Responsable
+  // Calendrier - Responsable (Planning semaine)
+  { path: '/responsable/calendrier-planning', component: () => import('@/pages/responsable/calendrier-planning.vue'), name: 'responsable-planning' },
+  // Calendrier - Responsable (Mensuel)
   { path: '/responsable/calendrier', component: () => import('@/pages/responsable/calendrier.vue'), name: 'responsable-calendrier' },
 ]
 
