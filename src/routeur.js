@@ -16,6 +16,12 @@ const routes = [
   { path: '/tech/dashboard', component: () => import('@/pages/tech/dashboard.vue'), name: 'tech-dashboard' },
   // Calendrier - Tech
   { path: '/tech/calendrier', component: () => import('@/pages/tech/calendrier.vue'), name: 'tech-calendrier' },
+  // Fiche intervention - Tech
+  { path: '/tech/fiche/:id', component: () => import('@/pages/tech/fiche-intervention.vue'), name: 'tech-fiche' },
+  // Compléter intervention - Tech
+  { path: '/tech/completer/:id', component: () => import('@/pages/tech/completer-intervention.vue'), name: 'tech-completer' },
+  // Alertes - Tech
+  { path: '/tech/alertes', component: () => import('@/pages/tech/alertes.vue'), name: 'tech-alertes' },
   // Calendrier - Client
   { path: '/client/choix-creneau', component: () => import('@/pages/client/choix-creneau.vue'), name: 'client-creneau' },
   // Calendrier - Responsable (Planning semaine)
