@@ -3,19 +3,11 @@ Composant racine de l'application
 Layout global: Entete - Barre-nav - RouterView - PiedPage -->
 
 <template>
-  <div>
-    <!-- TODO: Layout racine -->
-    <!-- <entete /> -->
-    <!-- <barre-nav v-if="showNav" /> -->
-    <!-- <router-view /> -->
-    <!-- <pied-page /> -->
-  </div>
+  <router-view />
 </template>
 
 <script setup>
-// TODO: Logique App.vue
-// - Afficher/cacher nav selon route
-// - Styles globaux
+import { useRouter } from 'vue-router'
 </script>
 
 <style scoped>

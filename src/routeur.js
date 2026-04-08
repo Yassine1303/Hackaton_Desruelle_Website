@@ -6,11 +6,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
-  // TODO: Routes publiques (/, prestations, apropos, contact, connexion)
-  // TODO: Routes client (client/*, /suivi-commande, /paiement, etc.)
-  // TODO: Routes tech (tech/*, /tech/dashboard, /tech/calendrier, etc.)
-  // TODO: Routes responsable (responsable/*, /dashboard, /demandes, /calendrier, etc.)
-  // TODO: Routes universelles (profil, notifications, erreur)
+  // Dashboard - Tech
+  { path: '/tech/dashboard', component: () => import('@/pages/tech/dashboard.vue'), name: 'tech-dashboard' },
+  // Calendrier - Tech
+  { path: '/tech/calendrier', component: () => import('@/pages/tech/calendrier.vue'), name: 'tech-calendrier' },
+  // Calendrier - Client
+  { path: '/client/choix-creneau', component: () => import('@/pages/client/choix-creneau.vue'), name: 'client-creneau' },
+  // Calendrier - Responsable
+  { path: '/responsable/calendrier', component: () => import('@/pages/responsable/calendrier.vue'), name: 'responsable-calendrier' },
 ]
 
 const router = createRouter({
